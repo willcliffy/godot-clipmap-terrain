@@ -1,0 +1,14 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=3 uid="uid://dgvde2hw181te"]
+
+[ext_resource type="Shader" path="res://clipmap.gdshader" id="1_0uue2"]
+[ext_resource type="Texture2D" uid="uid://dx8rorn1y3vxi" path="res://terrain_noise.tres" id="2_0it7w"]
+[ext_resource type="Texture2D" uid="uid://ce0dw7i5vekn7" path="res://terrain_normal.tres" id="2_2d3v7"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_0uue2")
+shader_parameter/xz_scale = 0.01
+shader_parameter/height = 5.0
+shader_parameter/uv = Vector2(0, 0)
+shader_parameter/terrain_noise = ExtResource("2_0it7w")
+shader_parameter/normal_map = ExtResource("2_2d3v7")
